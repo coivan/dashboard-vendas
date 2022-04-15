@@ -78,12 +78,98 @@ header {
 .menu li a:hover {
     background-color: rgb(60, 123, 240);
 }
+
+.sidenav li {
+    list-style: none;
+}
+
+.sidenav li a {
+    font-size: 1.5em;
+    color: blue;
+    text-decoration: none;
+    line-height: 3;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.sidenav li a:hover {
+    background-color: rgb(60, 123, 240);
+}
 /* TERMINA MENU */
 
 /* COMEÇA O LAYOUT GRID */
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas: 
+    "sidenav item item"
+    "sidenav item item"
+    "footer footer footer";
+}
+
+.sidenav {
+    max-width: 300px;
+    min-width: 250px;
+    height: 620px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    grid-area: "sidenav";
+    grid-row: sidenav;
+}
+
+.item {
+    max-width: 300px;
+    min-width: 250px;
+    background-color: #888;
+    border-radius: 10px;
+    grid-area: "item";
+}
+
+.footer {
+    width: auto;
+    height: 60px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    grid-area: "footer";
+    grid-column: footer;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* media query */
+@media (max-width: 820px) {
+    .container {
+        grid-template-areas: 
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "footer footer"
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        grid-template-areas:
+        "sidenav"
+        "item"
+        "item"
+        "item"
+        "item"
+        "footer"
+    }
 }
 
 
