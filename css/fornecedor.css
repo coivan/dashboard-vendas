@@ -1,12 +1,14 @@
-@charset "UTF-8";
-
 *{
     border: none;
 }
 
 body{
-    background-color: var(--cor5);
-    padding-top: 10%;
+    background-color: var(--cor2);
+}
+
+.title{
+    color: var(--cor1);
+    font-size: 23px;
 }
 
 h1{
@@ -29,6 +31,7 @@ article{
     padding: 10px;  
     border-radius: 5px;
     margin-bottom: 25px;
+    margin-top: 20px;
 }
 
 p{
@@ -54,23 +57,49 @@ input:focus{
     outline: none;
 }
 
-.textfield, .form, .endereco {
+.textfield, .form, .endereco, .contato, .empresa {
     border: 2px solid var(--cor5);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
     border-radius: 5px 0px 5px 0px;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
 }
 
 #nome, #sobrenome, #email, #bairro, #profissao, #cidade, #estado{
     width: 85px; 
 }
+
+#empresa, #cargo{
+    width: 150px;
+    font-family: var(--font-destaque);
+}
 #n_casa{
     width: 30px;
+}
+select{
+    color: black;
 }
 #estilo{
     border: 1px solid black;
     width: 85px; 
+}
+
+.estilo{
+    padding-top: 2px;
+}
+
+#contato{
+    width: 30px;
+    font-family: var(--font-destaque);
+}
+
+#ddd{
+    width: 30px;
+    color: black;
+    font-family: var(--font-destaque);
+}
+.estado, .escala{
+    padding-top: 2px;
 }
 
 button{
@@ -87,4 +116,22 @@ button:hover{
     background-color: var(--cor2);
     color: var(--cor1);
     font-weight: bold;  
+}
+
+.footer {
+    width: auto;
+    height: 60px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    grid-area: "footer";
+    grid-column: footer;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
 }
