@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: lightgray;
+    background-color: var(--cor2);
     font-size: small;
 }
 
@@ -49,7 +49,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-color: lightgray;
+    background-color: var(--cor2);
 }
 
 .menu {
@@ -105,36 +105,23 @@ header {
     justify-content: center;
     grid-template-areas: 
     "sidenav item item"
-    "sidenav item item"
     "footer footer footer";
 }
 
 .sidenav {
-    max-width: 300px;
-    min-width: 250px;
-    height: 620px;
+    max-width: 360px;
+    min-width: 300px;
+    height: 600px;
     background-color: var(--cor3);
     border-radius: 10px;
     grid-area: "sidenav";
     grid-row: sidenav;
 }
 
-.tabela {
-    color: var(--cor1);
-    font-weight: 600;
-    border-spacing: 2px;
-    border-collapse: separate;
-    margin: 0 auto;
-    font-size: 0.8em;
-    text-align:left; 
-    width: 100%;
-    padding: 5px;
-}
-
 .item {
-    max-width: 300px;
-    min-width: 250px;
-    background-color: var(--cor2);
+    max-width: 360px;
+    min-width: 300px;
+    background-color: white;
     border-radius: 10px;
     grid-area: "item";
 }
@@ -145,15 +132,15 @@ header {
 
 .footer {
     width: auto;
-    height: 60px;
+    height: 80px;
     background-color: var(--cor3);
     border-radius: 10px;
     grid-area: "footer";
     grid-column: footer;
     text-align: center;
     font-weight: 600;
-    padding-top: 10px;
-    margin-bottom: 20px;
+    padding-top: 1em;
+    margin-bottom: 10px;
 }
 
 .footer a {
@@ -161,12 +148,19 @@ header {
     color: black;
 }
 
+.tabela {
+    color: var(--cor1);
+    font-weight: 600;
+    border-spacing: 2px;
+    font-size: 0.9em;
+    width: 100%;
+    padding: 5px;
+}
+
 /* media query */
 @media (max-width: 820px) {
     .container {
         grid-template-areas: 
-        "sidenav item"
-        "sidenav item"
         "sidenav item"
         "sidenav item"
         "footer footer"
@@ -177,8 +171,6 @@ header {
     .container {
         grid-template-areas:
         "sidenav"
-        "item"
-        "item"
         "item"
         "item"
         "footer"

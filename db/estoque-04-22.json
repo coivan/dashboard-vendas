@@ -1,0 +1,117 @@
+{
+    "estoque": 
+    [
+        {
+            "nome": "Notebook Samsung S-300",
+            "quantidade": "100",
+            "valor": "3500.00",
+            "validade": "indeterminada",
+            "lote": "XXPI-2204"
+        },
+        {
+            "nome": "Geladeira Eletrolux E-85",
+            "quantidade": "150",
+            "valor": "2790.57",
+            "validade": "indeterminada",
+            "lote": "XYPI-2204"
+        },
+        {
+            "nome": "Smartphone Motorola Moto G100",
+            "quantidade": "10",
+            "valor": "2999.98",
+            "validade": "indeterminada",
+            "lote": "XZPI-2204"
+        },
+        {
+            "nome": "Microondas Consul CL-100",
+            "quantidade": "10",
+            "valor": "359.98",
+            "validade": "indeterminada",
+            "lote": "XAPI-2204"
+        },
+        {
+            "nome": "Sofá Kiconforto KF-69",
+            "quantidade": "5",
+            "valor": "749.50",
+            "validade": "indeterminada",
+            "lote": "XBPI-2204"
+        },
+        {
+            "nome": "CD do Latino",
+            "quantidade": "10000",
+            "valor": "19.99",
+            "validade": "indeterminada",
+            "lote": "XCPI-2204"
+        },
+        {
+            "nome": "Livro C como programar",
+            "quantidade": "9",
+            "valor": "49.99",
+            "validade": "indeterminada",
+            "lote": "XDPI-2204"
+        },
+        {
+            "nome": "Telefone fixo Jabuticaba",
+            "quantidade": "1500",
+            "valor": "99.98",
+            "validade": "indeterminada",
+            "lote": "XEPI-2204"
+        },
+        {
+            "nome": "Livro aprenda PHP penando",
+            "quantidade": "220",
+            "valor": "45.00",
+            "validade": "indeterminada",
+            "lote": "XFPI-2204"
+        },
+        {
+            "nome": "Notebook Acer A-300",
+            "quantidade": "14",
+            "valor": "1600.00",
+            "validade": "indeterminada",
+            "lote": "XGPI-2204"
+        },
+        {
+            "nome": "Smartphone Samsung S100",
+            "quantidade": "0",
+            "valor": "2999.98",
+            "validade": "indeterminada",
+            "lote": "XHPI-2204"
+        },
+        {
+            "nome": "WePhone X-men",
+            "quantidade": "11",
+            "valor": "5999.98",
+            "validade": "indeterminada",
+            "lote": "XIPI-2204"
+        },
+        {
+            "nome": "Tablet Motorola Mototab MT100",
+            "quantidade": "14",
+            "valor": "2999.98",
+            "validade": "indeterminada",
+            "lote": "XJPI-2204"
+        },
+        {
+            "nome": "Pneu Pirelli Aro 14",
+            "quantidade": "0",
+            "valor": "199.98",
+            "validade": "Wed Mar 20 2022 18:38:58 GMT-0300 (Horário Padrão de Brasília)",
+            "lote": "XKPI-2204"
+        },
+        {
+            "nome": "Câmara de ar Pirelli",
+            "quantidade": "0",
+            "valor": "89.98",
+            "validade": "Wed Apr 20 2022 18:38:58 GMT-0300 (Horário Padrão de Brasília)",
+            "lote": "XLPI-2204"
+        },
+        {
+            "nome": "Kit Manguira de Gás Taseguro TG-2000",
+            "quantidade": "0",
+            "valor": "19.98",
+            "validade": "Wed Mar 20 2024 18:38:58 GMT-0300 (Horário Padrão de Brasília)",
+            "lote": "XMPI-2204"
+        }
+    ]
+}

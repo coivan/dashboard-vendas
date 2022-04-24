@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../icon/form.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/dashbord.css">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../js/dashboard.js"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="../icon/logo.png" alt="Logo"></a>
+      </div>
+      <div>
+        <p class="title">Dashboard</p>
+      </div>
+      <ul class="menu">
+        <li>
+          <a class="fechar" href="#">
+            <i class="fa fa-sign-out"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="graficos">
+      <div id="chart_div" class="thumb-image"></div>
+      <div id="chart_div2" class="thumb-image"></div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages': ['corechart']
+      });
+
+      google.charts.setOnLoadCallback(drawChart);
+
+
+      function drawChart() {
+
+        // GRÁFICO COLUNAS
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Mês');
+        data.addColumn('number', 'Vendas');
+
+        data.addRows(
+          [
+            ['Janeiro', 78],
+            ['Fevereiro', 178],
+            ['Março', 147],
+            ['Abril', 566],
+            ['Maio', 187],
+            ['Junho', 338],
+            ['Julho', 338],
+            ['Agosto', 70],
+            ['Setembro', 50],
+            ['Outubro', 225],
+            ['Novembro', 400],
+            ['Dezembro', 500]
+          ]
+        );
+
+        var options = {
+          'title': 'Vendas por Mês',
+          'width': 600,
+          'height': 500,
+          colors: ['#529EE6', '#435566']
+
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+
+
+        // GRÁFICO LINHAS
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Ano');
+        data.addColumn('number', 'Desempenho');
+        data.addColumn('number', 'Em falta');
+
+
+        data.addRows(
+          [
+            ['2018', 780, 630],
+            ['2019', 1000, 470],
+            ['2020', 1170, 560],
+            ['2021', 690, 1120],
+            ['2022', 780, 630],
+          ]
+        );
+
+        var options = {
+          'title': 'Fluxo',
+          'width': 600,
+          'height': 500,
+          colors: ['#435566', '#407BB3']
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <div class="container-fluid">
+
+      <h2>Section title</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1,001</td>
+              <td>random</td>
+              <td>data</td>
+              <td>placeholder</td>
+              <td>text</td>
+            </tr>
+            <td>1,001</td>
+            <td>random</td>
+            <td>data</td>
+            <td>placeholder</td>
+            <td>text</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TABELAS OPCIONAIS -->
+    <br>
+    <section>
+      <div class="item">
+          <h2>Atenção</h2>
+          <table id="tabela-atencao" class="tabela">
+              <tr>
+                  <th>Nome</th>
+                  <th>Quantidade</th>
+                  <th>Valor</th>
+                  <th>Data</th>
+              </tr>
+          </table>
+      </div>
+      <br>
+      <div class="item">
+          <h2>Em Falta</h2>
+          <table id="tabela-em-falta" class="tabela">
+              <tr>
+                  <th>Nome</th>
+                  <th>Quantidade</th>
+                  <th>Valor</th>
+                  <th>Data</th>
+              </tr>
+          </table>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    <p>
+      Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
+      <br>
+      <a href="mailto:dev@gmail.com">dev@gmail.com</a>
+    </p>
+  </div>
+
+</body>

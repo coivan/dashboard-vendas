@@ -1,36 +1,35 @@
 {
-    "produtos": {
-        "vendas": [
-            {
-                "nome": "Notebook Samsung S-300",
-                "quantidade": "1",
-                "valor": "3500.00",
-                "data": "Wed Apr 20 2022 08:38:58 GMT-0300 (Horário Padrão de Brasília)"
-            },
-            {
-                "nome": "Geladeira Eletrolux E-85",
-                "quantidade": "1",
-                "valor": "5790.57",
-                "data": "Wed Apr 20 2022 09:38:58 GMT-0300 (Horário Padrão de Brasília)"
-            },
-            {
-                "nome": "Smartphone Motorola Moto G100",
-                "quantidade": "1",
-                "valor": "2999.98",
-                "data": "Wed Apr 20 2022 10:38:58 GMT-0300 (Horário Padrão de Brasília)"
-            },
-            {
-                "nome": "Notebook Samsung S-300",
-                "quantidade": "5",
-                "valor": "16500.00",
-                "data": "Wed Apr 20 2022 12:38:58 GMT-0300 (Horário Padrão de Brasília)"
-            },
-            {
-                "nome": "Smartphone Motorola Moto G100",
-                "quantidade": "1",
-                "valor": "2999.98",
-                "data": "Wed Apr 20 2022 18:38:58 GMT-0300 (Horário Padrão de Brasília)"
-            }          
-        ]
-    }
+    "vendas": 
+    [
+        {
+            "nome": "Notebook Samsung S-300",
+            "quantidade": "1",
+            "valor": "3500.00",
+            "data": "Wed Apr 20 2022 08:38:58 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Geladeira Eletrolux E-85",
+            "quantidade": "1",
+            "valor": "5790.57",
+            "data": "Wed Apr 20 2022 09:38:58 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Smartphone Motorola Moto G100",
+            "quantidade": "1",
+            "valor": "2999.98",
+            "data": "Wed Apr 20 2022 10:38:58 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Notebook Samsung S-300",
+            "quantidade": "5",
+            "valor": "16500.00",
+            "data": "Wed Apr 20 2022 12:38:58 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Smartphone Motorola Moto G100",
+            "quantidade": "1",
+            "valor": "2999.98",
+            "data": "Wed Apr 20 2022 18:38:58 GMT-0300 (Horário Padrão de Brasília)"
+        }
+    ]
 }

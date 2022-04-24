@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Vendas</title>
     <link rel="shortcut icon" href="../icon/form.ico" type="image/x-icon">
-    <title>Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/produto.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/produto.js"></script>
 </head>
-<body>
-    
+
+<body onload="montarTabela()">
+
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../icon/logo.png" alt="Logo"></a>
+        </div>
+
+        <h2 class="titulo">PRODUTOS</h2>
+
+        <ul class="menu">
+            <li>
+                <a class="fechar" href="#">
+                    <i class="fa fa-sign-out"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container-produtos">
+            <div class="item-produtos">
+                <table id="tabela-estoque">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                        <th>Validade</th>
+                        <th>Lote</th>
+                    </tr>
+                </table>
+            </div>
+
+            <button onclick="alertaDeEstoque()" class="btn-estoque">Verificar Estoque</button>
+
+            <div class="piechart" id="piechart"></div>
+
+            <div class="footer">
+                <p>
+                    Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
+                    <br>
+                    <a href="mailto:dev@gmail.com">dev@gmail.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
