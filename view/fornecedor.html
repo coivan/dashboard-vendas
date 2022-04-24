@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/form.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fornecedor.css">
+   
     <title>Fornecedores</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="../icon/logo.png" alt="Logo">
+        </div>
+        <div>
+          <p class="title">Cadastro de Fornecedores</p>
+        </div>
+        <ul class="menu">
+            <li>
+                <a class="fechar" href="#">
+                    <i class="fa fa-sign-out"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+
     <main>
-        <article>
+    <article>
         <div class="textfield">
         
         <div class="form">
-            <p>Cadastro de Fornecedores</p>
+            <p>Fornecedores</p>
             <label for="nome">Nome: </label>
             <input type="nome" name="nome" id="nome">
             
@@ -79,6 +97,60 @@
                   </select>     
             </div>
         </div>
+
+        <div class="contato">
+            <p>Contato</p>
+            
+                <label for="contato">Tipo: </label>
+                <select id="estilo">
+                    <option value="">Selecione</option>
+                    <option value="cm">Comercial</option>
+                    <option value="ps">Pessoal</option>
+                </select> 
+    
+            <div>
+                <label for="contato">Celular: </label>
+                <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
+                <input type="contato" name="contato" id="contato">
+                <span class="input-group-text" id="inputGroupPrepend">-</span>
+                <input type="contato" name="contato" id="contato">
+        
+
+            <div>
+                <label for="contato">Telefone: </label>
+                <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
+                <input type="contato" name="contato" id="contato">
+                <span class="input-group-text" id="inputGroupPrepend">-</span>
+                <input type="contato" name="contato" id="contato">  
+                </div>
+            </div>
+        </div>
+
+        <div class="empresa">
+            <p>Empresa</p>
+            <label for="empresa">Nome da empresa: </label>
+            <input type="empresa" name="empresa" id="empresa">
+
+        <div class="escala">
+            <label for="escala">Escala: </label>
+                <select id="estilo" class="estilo">
+                    <option value="">Selecione</option>
+                    <option value="modelo ">5x1</option>
+                    <option value="modelo">5x2</option>
+                    <option value="modelo">4x2</option>
+                    <option value="modelo">6x1</option>
+                    <option value="modelo">12x36</option>
+                    <option value="modelo">18x36</option>
+                    <option value="modelo">24x48</option>
+                </select>  
+        </div>
+
+        <div>
+            <label for="cargo">Cargo: </label>
+            <input type="cargo" name="cargo" id="cargo">
+
+        </div>
+        </div>
     
         <div>
             <button type="submit">Enviar</button>
@@ -86,5 +158,13 @@
         </div>
     </article>
 </main>
+
+        <div class="footer">
+            <p>
+            Desenvolvido por Tico e Teco | &copy; 2022
+            <br>
+        <a href="mailto:dev@gmail.com">dev@gmail.com</a>
+        </p>
+        </div>
 </body>
 </html>
