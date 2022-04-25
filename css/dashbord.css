@@ -8,6 +8,7 @@ body{
     text-align: center;
     display: flex;
     font-size: 30px;
+    color: var(--cor1);
 }
 
 .graficos{
@@ -34,4 +35,27 @@ body{
 .footer a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 820px) {
+    .graficos{
+        display: block;
+        text-align: center;
+        margin-top: 19px;
+        margin-left: 13%;
+        margin-right: 20%;
+        }    
+    }
+
+@media screen and (max-width: 500px) {
+    .graficos {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: -13%;
+        margin-right: 20%;  
+    } 
+    .chart_div{
+        width: 100%;
+    }
 }
