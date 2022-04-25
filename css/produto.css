@@ -17,6 +17,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px 20px 20px;
+    font-family: var( --font-destaque01);
     display: grid;
     gap: 20px;
     justify-content: center;
@@ -48,6 +49,7 @@ body {
     font-weight: 600;
     color: white;
     grid-area: "btn-estoque";
+    font-family: var( --font-destaque01);
 }
 
 .btn-estoque:hover {
