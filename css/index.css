@@ -90,11 +90,16 @@ header {
     text-decoration: none;
     line-height: 3;
     padding: 10px;
+    margin: 3px;
     border-radius: 10px;
     font-weight: 600;
 }
 
 .sidenav li a:hover {
+    background-color: var(--cor2);
+}
+
+.menu-ativo {
     background-color: var(--cor2);
 }
 /* TERMINA MENU */

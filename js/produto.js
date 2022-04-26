@@ -45,6 +45,7 @@ function alertaDeEstoque() {
     }
 }
 
+// GRÁFOCO DE PIZZA
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
@@ -52,19 +53,21 @@ function drawChart() {
       ['Task', 'Fornecedor por fornecimentos'],
       ['Motorola',     10],
       ['Samsung',      20],
-      ['Acer',  2],
-      ['Editora Amanda Beijo e Abraços', 13],
+      ['Acer',  10],
+      ['Editora Armando Bagunça', 13],
       ['Gravadora Noisedeam',    5]
     ]);
-
     var options = {
-      title: ''
+      title: 'Produtos por fornecedor'
     };
-
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
     chart.draw(data, options);
 }
+
+// redimensiona o gráfico
+$(window).resize(function(){
+    drawChart();
+});
 
 
 

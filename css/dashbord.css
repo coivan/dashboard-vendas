@@ -11,25 +11,57 @@ body{
     color: var(--cor1);
 }
 
-.graficos{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 5.5%;
-    margin-right: 10%;
+/* COMEÇA O LAYOUT GRID */
+.container-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
+    font-family: var(--font-destaque01);
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas:
+    "grafico grafico"
+    "item item"
+    "footer footer";
+}
+
+.grafico {
+    max-width: 1000px;
+    min-width: 350px;
+    width: 100%;
+    min-height: 350px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    grid-area: "grafico";
+}
+
+.item {
+    max-width: 1000px;
+    min-width: 350px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--cor1);
+    font-weight: 600;
+    border-spacing: 2px;
+    font-size: 0.9em;
+    padding: 5px;
+    grid-area: "item";
 }
 
 .footer {
     width: auto;
-    height: 60px;
+    height: 80px;
     background-color: var(--cor3);
     border-radius: 10px;
-    grid-area: "footer";
     grid-column: footer;
     text-align: center;
     font-weight: 600;
-    padding-top: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding-top: 1em;
+    margin-bottom: 10px;
+    grid-area: "footer";
 }
 
 .footer a {
@@ -38,24 +70,20 @@ body{
 }
 
 @media (max-width: 820px) {
-    .graficos{
-        display: block;
-        text-align: center;
-        margin-top: 19px;
-        margin-left: 13%;
-        margin-right: 20%;
-        }    
+    .container-dashboard {
+        grid-template-areas:
+        "grafico grafico"
+        "item item"
+        "footer footer"
     }
-
-@media screen and (max-width: 500px) {
-    .graficos {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-        margin-left: -13%;
-        margin-right: 20%;  
-    } 
-    .chart_div{
-        width: 100%;
+}
+@media (max-width: 520px) {
+    .container-dashboard {
+        grid-template-areas:
+        "grafico"
+        "grafico"
+        "item"
+        "item"
+        "footer"
     }
 }

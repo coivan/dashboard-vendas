@@ -1,24 +1,40 @@
 {
-    "produtos": {
-        "vendas": [
-            {
-                "nome": "CD do Latino",
-                "quantidade": "0",
-                "valor": "0",
-                "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
-            },
-            {
-                "nome": "Livro C como programar",
-                "quantidade": "0",
-                "valor": "0",
-                "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
-            },
-            {
-                "nome": "Telefone fixo Jabuticaba",
-                "quantidade": "0",
-                "valor": "0",
-                "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
-            }            
-        ]
-    }
+    "vendas": [
+        {
+            "nome": "CD do Latino",
+            "quantidade": "0",
+            "valor": "0",
+            "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Livro C como programar",
+            "quantidade": "0",
+            "valor": "0",
+            "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Telefone fixo Jabuticaba",
+            "quantidade": "0",
+            "valor": "0",
+            "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Novo CD do Latino",
+            "quantidade": "0",
+            "valor": "0",
+            "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Livro Jquery: socorro!",
+            "quantidade": "0",
+            "valor": "0",
+            "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        {
+            "nome": "Smartphone LG K2022",
+            "quantidade": "0",
+            "valor": "0",
+            "data": "Wed Apr 30 2022 23:59:59 GMT-0300 (Horário Padrão de Brasília)"
+        }
+    ]
 }
