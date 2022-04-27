@@ -30,75 +30,89 @@
     </header>
 
     <main>
-        <article>
-            <div class="textfield">
-            
-            <div class="form">
-                <p>Fornecedores</p>
-                <label for="nome">Nome: </label>
-                <input type="nome" name="nome" id="nome">
-                
-                <label for="sobrenome">Sobrenome: </label>
-                <input type="sobrenome" name="sobrenome" id="sobrenome">
-                
-            <div> 
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="email" name="email" id="email">
-                </div>
+        <section class="container-fornecedores">
+            <div class="sidenav">
+              <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../view/dashboard.html">Dashboard</a></li>
+                  <li><a href="../view/produto.html">Produtos</a></li>
+                  <li><a href="../view/fornecedor.html">Fornecedores</a></li>
+                  <li><a href="../view/fale_conosco.html" class="menu-ativo">Fale Conosco</a></li>
+                  <li><a href="../view/quemsomos.html">Quem Somos</a></li>
+              </ul>
             </div>
 
-            <div class="contato">
-                <p>Contato</p>
+            <article>
+                <div class="textfield">
                 
-                    <label for="contato">Tipo: </label>
-                    <select id="estilo">
-                        <option value="">Selecione</option>
-                        <option value="cm">Comercial</option>
-                        <option value="ps">Pessoal</option>
-                    </select> 
-        
-                <div>
-                    <label for="contato">Celular: </label>
-                    <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
-                    <input type="contato" name="contato" id="contato">
-                    <span class="input-group-text" id="inputGroupPrepend">-</span>
-                    <input type="contato" name="contato" id="contato">
-            
-    
-                <div>
-                    <label for="contato">Telefone: </label>
-                    <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
-                    <input type="contato" name="contato" id="contato">
-                    <span class="input-group-text" id="inputGroupPrepend">-</span>
-                    <input type="contato" name="contato" id="contato">  
+                <div class="form">
+                    <p>Fornecedores</p>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                    
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                    
+                <div> 
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email-nome">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="email" name="email" id="email-dominio">
                     </div>
                 </div>
-            </div>
 
-            <div class="form">
-            <div class="comentario">
-                <p>Comentários</p>
-                <label id="labe" for="mensagem">Mensagem</label>
-                <textarea name="textareamsg" id="textareamsg"></textarea>
-            </div>
-            </div>
+                <div class="contato">
+                    <p>Contato</p>
+                    
+                        <label for="contato">Tipo: </label>
+                        <select id="estilo">
+                            <option value="">Selecione</option>
+                            <option value="cm">Comercial</option>
+                            <option value="ps">Pessoal</option>
+                        </select> 
+            
+                    <div>
+                        <label for="contato">Celular: </label>
+                        <input type="text" name="ddd" id="ddd" placeholder="DDD">
+                        <input type="text" name="contato" id="contato">
+                        <span class="input-group-text" id="inputGroupPrepend2">-</span>
+                        <input type="text" name="contato" id="contato2">
+                
+        
+                    <div>
+                        <label for="contato">Telefone: </label>
+                        <input type="text" name="ddd" id="ddd2" placeholder="DDD">
+                        <input type="text" name="contato" id="contato3">
+                        <span class="input-group-text" id="inputGroupPrepend3">-</span>
+                        <input type="text" name="contato" id="contato4">  
+                        </div>
+                    </div>
+                </div>
 
-            <div>
-                <button type="submit">Enviar</button>
-                <button type="submit">Limpar</button>
-            </div>
-        </article>
-    </main>
-    
+                <div class="form">
+                    <div class="comentario">
+                        <p>Comentários</p>
+                        <label id="labe" for="mensagem">Mensagem</label>
+                        <textarea name="textareamsg" id="textareamsg"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="submit">Limpar</button>
+                </div>
+            </article>
+
             <div class="footer">
-                <p class="footer">
+                <p>
                     Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
-                <br>
-            <a href="mailto:dev@gmail.com">dev@gmail.com</a>
-            </p>
+                    <br>
+                    <a href="mailto:dev@gmail.com">dev@gmail.com</a>
+                </p>
             </div>
-        </article>
+
+        </section>
+    </main>
+        
     </main>
 </body>
