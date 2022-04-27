@@ -21,13 +21,25 @@ body{
     gap: 20px;
     justify-content: center;
     grid-template-areas:
-    "grafico grafico"
-    "item item"
+    "sidenav grafico"
+    "sidenav grafico"
+    "item grafico"
+    "item grafico"
     "footer footer";
 }
 
+.sidenav {
+    max-width: 400px;
+    min-width: 350px;
+    height: 100%;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    grid-area: "sidenav";
+    grid-row: sidenav;
+}
+
 .grafico {
-    max-width: 1000px;
+    max-width: 400px;
     min-width: 350px;
     width: 100%;
     min-height: 350px;
@@ -38,7 +50,7 @@ body{
 }
 
 .item {
-    max-width: 1000px;
+    max-width: 400px;
     min-width: 350px;
     width: 100%;
     background-color: white;
@@ -72,14 +84,19 @@ body{
 @media (max-width: 820px) {
     .container-dashboard {
         grid-template-areas:
-        "grafico grafico"
-        "item item"
-        "footer footer"
+        "sidenav grafico"
+        "sidenav grafico"
+        "item grafico"
+        "item grafico"
+        "footer footer";
     }
 }
 @media (max-width: 520px) {
     .container-dashboard {
         grid-template-areas:
+        "sidenav"
+        "grafico"
+        "grafico"
         "grafico"
         "grafico"
         "item"

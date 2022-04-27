@@ -86,7 +86,7 @@ function drawChart1() {
         // 'height': 500,
         colors: ['#529EE6', '#435566']
     };
-    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
     chart.draw(data, options);
 }
 
@@ -117,8 +117,70 @@ function drawChart2() {
     chart.draw(data, options);
 }
 
+// GRÁFICO TREEMAP
+google.charts.load('current', {'packages':['treemap']});
+google.charts.setOnLoadCallback(drawChart3);
+function drawChart3() {
+    var data = google.visualization.arrayToDataTable([
+        ['Location', 'Parent', 'Market trade volume (size)', 'Market increase/decrease (color)'],
+        ['Global',               null,                 0,                               0],
+        ['Informática',          'Global',             0,                               0],
+        ['Eletroeletrônicos',    'Global',             0,                               0],
+        ['Telefonia',            'Global',             0,                               0],
+        ['Outros',               'Global',             0,                               0],
+        ['Livros',               'Global',             0,                               0],
+        ['Impressoras',          'Informática',            11,                              10],
+        ['Notebooks',            'Informática',            52,                              31],
+        ['Monitores',            'Informática',            24,                              12],
+        ['Mouses',               'Informática',            16,                              -23],
+        ['TVs',                  'Eletroeletrônicos',             42,                              -11],
+        ['Concoles',             'Eletroeletrônicos',             31,                              -2],
+        ['Caixas de som',        'Eletroeletrônicos',             22,                              -13],
+        ['Geladeiras',           'Eletroeletrônicos',             17,                              4],
+        ['Fogões',               'Eletroeletrônicos',             21,                              -5],
+        ['Smartphones Android',  'Telefonia',               36,                              4],
+        ['iPhones',              'Telefonia',               40,                              63],
+        ['Acessorios',           'Telefonia',               4,                               34],
+        ['Teelefones fixos',     'Telefonia',               1,                               -5],
+        ['Peliculas',            'Telefonia',               12,                              24],
+        ['Romance',              'Livros',             21,                              0],
+        ['Biografias',           'Livros',             10,                              12],
+        ['Tecnico',              'Livros',             8,                               10]
+      ]);
+    tree = new google.visualization.TreeMap(document.getElementById('chart_div3'));
+    tree.draw(data, {
+        minColor: '#f00',
+        midColor: '#ddd',
+        maxColor: '#0d0',
+        headerHeight: 15,
+        fontColor: 'black',
+        showScale: true
+    });
+}
+
+// GRÁFOCO DE PIZZA
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart4);
+function drawChart4() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Fornecedor por fornecimentos'],
+      ['Motorola',     10],
+      ['Samsung',      20],
+      ['Acer',  10],
+      ['Editora Armando Bagunça', 13],
+      ['Gravadora Noisedeam',    5]
+    ]);
+    var options = {
+      title: 'Produtos por fornecedor'
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div4'));
+    chart.draw(data, options);
+}
+
 // redimensiona os gráficos
 $(window).resize(function(){
     drawChart1();
     drawChart2();
+    drawChart3();
+    drawChart4();
 });
