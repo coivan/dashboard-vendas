@@ -47,8 +47,8 @@ function alertaDeEstoque() {
 
 // GRÁFOCO DE PIZZA
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
+google.charts.setOnLoadCallback(drawChart1);
+function drawChart1() {
     var data = google.visualization.arrayToDataTable([
       ['Task', 'Fornecedor por fornecimentos'],
       ['Motorola',     10],
@@ -64,9 +64,28 @@ function drawChart() {
     chart.draw(data, options);
 }
 
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart2);
+function drawChart2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Contribuição para a receita'],
+      ['Notebook Samsung S-300',     40000],
+      ['Smartphone Motorola Moto G100',      25000],
+      ['WePhone 4 X-men',  25000],
+      ['Notebook Acer A-300', 5000],
+      ['Smartphone Samsung S100',    5000]
+    ]);
+    var options = {
+      title: 'Contribuição para a receita'
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+    chart.draw(data, options);
+}
+
 // redimensiona o gráfico
 $(window).resize(function(){
-    drawChart();
+    drawChart1();
+    drawChart2();
 });
 
 

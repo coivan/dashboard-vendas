@@ -22,14 +22,23 @@ body {
     gap: 20px;
     justify-content: center;
     grid-template-areas:
-    "item-produto"
-    "btn-estoque"
-    "piechart"
-    "footer";
+    "sidenav item-produto"
+    "piechart piechart"
+    "footer footer";
+}
+
+.sidenav {
+    max-width: 100%;
+    min-width: 350px;
+    height: 100%;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    grid-area: "sidenav";
+    grid-row: sidenav;
 }
 
 .item-produtos {
-    max-width: 1000px;
+    max-width: 100%;
     min-width: 350px;
     background-color: white;
     border-radius: 10px;
@@ -43,15 +52,16 @@ body {
 }
 
 .btn-estoque {
-    max-width: 1000px;
-    min-width: 350px;
+    max-width: 100%;
+    min-width: 100%;
     background-color: var(--cor3);
     padding: 10px;
     border-radius: 10px;
     font-weight: 600;
+    font-size: 1.3em;
     color: white;
-    grid-area: "btn-estoque";
     font-family: var( --font-destaque01);
+    margin-top: 10px;
 }
 
 .btn-estoque:hover {
@@ -59,7 +69,7 @@ body {
 }
 
 .piechart {
-    max-width: 1000px;
+    max-width: 100%;
     min-width: 350px;
     width: 100%;
     min-height: 350px;
@@ -78,7 +88,7 @@ body {
     text-align: center;
     font-weight: 600;
     padding-top: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     grid-area: "footer";
 }
 
@@ -86,19 +96,21 @@ body {
 @media (max-width: 820px) {
     .container-produtos {
         grid-template-areas:
-        "item-produtos"
-        "btn-estoque"
+        "sidenav"
+        "item-produto"
         "piechart"
-        "footer"
+        "piechart"
+        "footer";
     }
 }
 
 @media (max-width: 520px) {
     .container-produtos {
         grid-template-areas:
-        "item-produtos"
-        "btn-estoque"
+        "sidenav"
+        "item-produto"
         "piechart"
-        "footer"
+        "piechart"
+        "footer";
     }
 }
