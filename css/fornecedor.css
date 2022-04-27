@@ -8,8 +8,10 @@ body{
 }
 
 .title{
+    text-align: center;
+    display: flex;
+    font-size: 30px;
     color: var(--cor1);
-    font-size: 23px;
 }
 
 h1{
@@ -30,17 +32,16 @@ article{
     border: 2px solid var(--cor5);
     background-color: white;
     padding: 10px;  
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 25px;
-    margin-top: 20px;
 }
 
 p{
-    font-size: 1.3em;
     padding: 10px;
 }
 
 p, label{
+    font-size: 1em;
     font-family: var(--font-destaque); 
 }
 
@@ -50,7 +51,7 @@ p, label{
 
 label{
     display: inline-block;
-    font-size: 1.1em; 
+    font-size: 1em; 
     text-indent: 15px;
 }
 
@@ -70,7 +71,7 @@ span{
     border: 2px solid var(--cor5);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
     border-radius: 5px 0px 5px 0px;
-    padding: 20px;
+    padding: 10px;
     margin: 5px;
 }
 
@@ -127,36 +128,71 @@ button:hover{
     font-weight: bold;  
 }
 
-.footer {
-    width: 74%;
-    height: 10%;
-    margin-left: 13%;
-    text-align: center;
-    padding-top: 5px;
-}
-
-.footer a {
+/* COMEÇA O LAYOUT GRID */
+.container-fornecedores {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
     font-family: var(--font-destaque01);
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas:
+    "sidenav cadastro-fornecedores"
+    "footer footer"
 }
 
-@media (max-width: 820px){
-    .footer {
-        width: 100%;
-        height: 10%;
-        font-size: 1.0em;
-        margin-left: 0%;
-        text-align: center;
-        padding-top: 5px;
+.sidenav {
+    max-width: 100%;
+    min-width: 350px;
+    height: 100%;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    grid-area: "sidenav";
+    grid-row: sidenav;
+}
+
+.cadastro-fornecedores {
+    max-width: 100%;
+    min-width: 350px;
+    height: 100%;
+    grid-area: "cadastro-fornecedores";
+}
+
+.footer {
+    width: auto;
+    height: 80px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    grid-column: footer;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-bottom: 0px;
+    grid-area: "footer";
+}
+
+/* media query */
+@media (max-width: 820px) {
+    .container-fornecedores {
+        grid-template-areas:
+        "sidenav"
+        "cadastro-fornecedores"
+        "footer"; 
     }
 }
 
-@media (max-width: 520px){
-    .footer {
-    width: 100%;
-    height: 10%;
-    font-size: 1.0em;
-    margin-left: 0%; 
-    text-align: center;
-    padding-top: 5px;
+@media (max-width: 520px) {
+    .container-fornecedores {
+        grid-template-areas:
+        "sidenav"
+        "cadastro-fornecedores"
+        "footer"; 
+    }
+    .textfield {
+        padding: 5px;
+    }
+    .textfield label {
+        font-size: 0.7em;
     }
 }

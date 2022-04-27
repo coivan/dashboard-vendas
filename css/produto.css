@@ -7,9 +7,10 @@ body {
 }
 
 .titulo {
+    text-align: center;
+    display: flex;
+    font-size: 30px;
     color: var(--cor1);
-    font-size: 23px;
-    font-weight: 600;
 }
 
 /* COMEÇA O LAYOUT GRID */

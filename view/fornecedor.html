@@ -18,7 +18,7 @@
            <a href="../index.html"><img src="../icon/logo.png" alt="Logo"></a>
         </div>
         <div>
-          <p class="title"><b>Cadastro de Fornecedores</b></p>
+          <p class="title"><b>Fornecedores</b></p>
         </div>
         <ul class="menu">
             <li>
@@ -30,28 +30,39 @@
     </header>
 
     <main>
-    <article>
-        <div class="textfield">
-        
-        <div class="form">
-            <p>Fornecedores</p>
-            <label for="nome">Nome: </label>
-            <input type="nome" name="nome" id="nome">
-            
-            <label for="sobrenome">Sobrenome: </label>
-            <input type="sobrenome" name="sobrenome" id="sobrenome">
-            
-        <div> 
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="email" name="email" id="email">
+        <section class="container-fornecedores">
+            <div class="sidenav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../view/dashboard.html">Dashboard</a></li>
+                    <li><a href="../view/produto.html">Produtos</a></li>
+                    <li><a href="../view/fornecedor.html" class="menu-ativo">Fornecedores</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
             </div>
-        </div>
 
-            <div class="endereco">
-                <p>Endereço</p>
+            <article class="cadastro-fornecedores">
+                <div class="textfield">
+                
+                <div class="form">
+                    <p>Fornecedores</p>
+                    <label for="nome">Nome: </label>
+                    <input type="nome" name="nome" id="nome">
                     
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="sobrenome" name="sobrenome" id="sobrenome">
+                    
+                <div> 
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="email" name="email" id="email">
+                    </div>
+                </div>
+
+                <div class="endereco">
+                    <p>Endereço</p>
+                        
                     <label for="bairro">Bairro: </label>
                     <input type="bairro" name="bairro" id="bairro">
                     
@@ -60,112 +71,114 @@
                     
                     <label for="n_casa">N°: </label>
                     <input type="n_casa" name="n_casa" id="n_casa">
-            
-            <div class="estado">
-                    <label for="cidade">Cidade: </label>
-                    <input type="cidade" name="cidade" id="cidade">
-
-                    <label for="estado">Estado: </label>
-                    <select id="estilo">
-                        <option value="">Selecione</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espirito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                  </select>     
-            </div>
-        </div>
-
-        <div class="contato">
-            <p>Contato</p>
-            
-                <label for="contato">Tipo: </label>
-                <select id="estilo">
-                    <option value="">Selecione</option>
-                    <option value="cm">Comercial</option>
-                    <option value="ps">Pessoal</option>
-                </select> 
-    
-            <div>
-                <label for="contato">Celular: </label>
-                <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
-                <input type="contato" name="contato" id="contato">
-                <span class="input-group-text" id="inputGroupPrepend">-</span>
-                <input type="contato" name="contato" id="contato">
-        
-
-            <div>
-                <label for="contato">Telefone: </label>
-                <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
-                <input type="contato" name="contato" id="contato">
-                <span class="input-group-text" id="inputGroupPrepend">-</span>
-                <input type="contato" name="contato" id="contato">  
+                
+                    <div class="estado">
+                        <label for="cidade">Cidade: </label>
+                        <input type="cidade" name="cidade" id="cidade">
+                        <label for="estado">Estado: </label>
+                        <select id="estilo">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>     
+                    </div>
                 </div>
+
+                <div class="contato">
+                    <p>Contato</p>
+                    
+                        <label for="contato">Tipo: </label>
+                        <select id="estilo">
+                            <option value="">Selecione</option>
+                            <option value="cm">Comercial</option>
+                            <option value="ps">Pessoal</option>
+                        </select> 
+            
+                    <div>
+                        <label for="contato">Celular: </label>
+                        <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
+                        <input type="contato" name="contato" id="contato">
+                        <span class="input-group-text" id="inputGroupPrepend">-</span>
+                        <input type="contato" name="contato" id="contato">
+                
+                        
+                    <div>
+                        <label for="contato">Telefone: </label>
+                        <input type="ddd" name="ddd" id="ddd" placeholder="DDD">
+                        <input type="contato" name="contato" id="contato">
+                        <span class="input-group-text" id="inputGroupPrepend">-</span>
+                        <input type="contato" name="contato" id="contato">  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="empresa">
+                    <p>Empresa</p>
+                    <label for="empresa">Nome da empresa: </label>
+                    <input type="empresa" name="empresa" id="empresa">
+
+                <div class="escala">
+                    <label for="escala">Escala: </label>
+                        <select id="estilo" class="estilo">
+                            <option value="">Selecione</option>
+                            <option value="modelo ">5x1</option>
+                            <option value="modelo">5x2</option>
+                            <option value="modelo">4x2</option>
+                            <option value="modelo">6x1</option>
+                            <option value="modelo">12x36</option>
+                            <option value="modelo">18x36</option>
+                            <option value="modelo">24x48</option>
+                        </select>  
+                </div>
+
+                <div>
+                    <label for="cargo">Cargo: </label>
+                    <input type="cargo" name="cargo" id="cargo">
+
+                </div>
+                </div>
+            
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="submit">Limpar</button>
+                </div>
+            </article>
+
+            <div class="footer">
+                <p>
+                    Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
+                    <br>
+                    <a href="mailto:dev@gmail.com">dev@gmail.com</a>
+                </p>
             </div>
-        </div>
 
-        <div class="empresa">
-            <p>Empresa</p>
-            <label for="empresa">Nome da empresa: </label>
-            <input type="empresa" name="empresa" id="empresa">
+        </section>
+    </main>
 
-        <div class="escala">
-            <label for="escala">Escala: </label>
-                <select id="estilo" class="estilo">
-                    <option value="">Selecione</option>
-                    <option value="modelo ">5x1</option>
-                    <option value="modelo">5x2</option>
-                    <option value="modelo">4x2</option>
-                    <option value="modelo">6x1</option>
-                    <option value="modelo">12x36</option>
-                    <option value="modelo">18x36</option>
-                    <option value="modelo">24x48</option>
-                </select>  
-        </div>
-
-        <div>
-            <label for="cargo">Cargo: </label>
-            <input type="cargo" name="cargo" id="cargo">
-
-        </div>
-        </div>
-    
-        <div>
-            <button type="submit">Enviar</button>
-            <button type="submit">Limpar</button>
-        </div>
-    </article>
-</main>
-
-        <div class="footer">
-            <p class="footer">
-                Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
-            <br>
-        <a href="mailto:dev@gmail.com">dev@gmail.com</a>
-        </p>
-        </div>
 </body>
 </html>
