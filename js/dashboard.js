@@ -66,18 +66,18 @@ function drawChart1() {
     data.addColumn('number', 'Vendas');
     data.addRows(
         [
-            ['Janeiro', 78],
-            ['Fevereiro', 178],
+            ['Janeiro', 100],
+            ['Fevereiro', 120],
             ['Março', 147],
-            ['Abril', 566],
-            ['Maio', 187],
-            ['Junho', 338],
-            ['Julho', 338],
-            ['Agosto', 70],
-            ['Setembro', 50],
-            ['Outubro', 225],
-            ['Novembro', 400],
-            ['Dezembro', 500]
+            ['Abril', 180],
+            ['Maio', 220],
+            ['Junho', 250],
+            ['Julho', 300],
+            ['Agosto', 324],
+            ['Setembro', 360],
+            ['Outubro', 390],
+            ['Novembro', 411],
+            ['Dezembro', 477]
         ]
     );
     var options = {
@@ -100,11 +100,11 @@ function drawChart2() {
     data.addColumn('number', 'Em falta');
     data.addRows(
         [
-            ['2018', 780, 630],
-            ['2019', 1000, 470],
-            ['2020', 1170, 560],
-            ['2021', 690, 1120],
-            ['2022', 780, 630],
+            ['2018', 120, 1200],
+            ['2019', 280, 900],
+            ['2020', 499, 500],
+            ['2021', 650, 200],
+            ['2022', 1200, 100],
         ]
     );
     var options = {

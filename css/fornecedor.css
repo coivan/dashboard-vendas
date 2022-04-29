@@ -66,8 +66,15 @@ input:focus{
 span{
     font-family: var(--font-destaque);
 }
+.textfield{
+    border-radius: 5px;
+    border: 2px solid var(--cor5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    margin: 5px;
+}
 
-.textfield, .form, .endereco, .contato, .empresa {
+.form, .endereco, .contato, .empresa {
     border: 2px solid var(--cor5);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
     border-radius: 5px 0px 5px 0px;
@@ -75,7 +82,7 @@ span{
     margin: 5px;
 }
 
-#nome, #sobrenome, #email, #bairro, #profissao, #cidade, #estado{
+#nome, #sobrenome, #email, #email2, #bairro, #profissao, #cidade, #estado{
     width: 85px; 
 }
 
@@ -89,12 +96,12 @@ span{
 select{
     color: black;
 }
-#estilo{
+#estilo, #estilo2, #estilo7{
     border: 1px solid black;
-    width: 85px; 
+    width: 90px; 
 }
 
-.estilo{
+.estilo, .estilo2, .estilo7{
     padding-top: 2px;
 }
 
@@ -103,11 +110,18 @@ select{
     font-family: var(--font-destaque);
 }
 
-#ddd{
+#dd2, #contato, #contato3, #contato5, #contato6{
     width: 30px;
     color: black;
     font-family: var(--font-destaque);
 }
+
+#ddd, #ddd2{
+    width: 17px;
+    color: black;
+    font-family: var(--font-destaque);
+}
+
 .estado, .escala{
     padding-top: 2px;
 }
@@ -170,6 +184,33 @@ button:hover{
     padding-top: 1em;
     margin-bottom: 0px;
     grid-area: "footer";
+    font-family: var(--font-destaque01);
+}
+
+.footer1{
+    font-family: var(--font-destaque01);
+}
+
+/* Implementação Cadastro JS */
+.textfield{
+    background-color: white;
+    border: 2px solid var(--cor5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    border-radius: 5px 0px 5px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    position: relative;
+    font-family: var(--font-destaque);
+  
+}
+
+th{
+    font-weight: normal;
 }
 
 /* media query */
@@ -196,3 +237,4 @@ button:hover{
         font-size: 0.7em;
     }
 }
+

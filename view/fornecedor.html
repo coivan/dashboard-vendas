@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/fornecedor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/fornecedores.js"></script>
    
     <title>Fornecedores</title>
 </head>
@@ -165,13 +166,25 @@
                 </div>
             
                 <div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit"  value="adicionar" onClick="adicionar()">Enviar</button>
                     <button type="submit">Limpar</button>
                 </div>
             </article>
 
+            <div class="textfield">
+                <p>Fornecedores Cadastrados</p>
+                <table class="textfield" id="fornecedores" >
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                        
+                    </tr>
+                </table>
+                </div>
+
             <div class="footer">
-                <p>
+                <p class="footer1">
                     Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
                     <br>
                     <a href="mailto:dev@gmail.com">dev@gmail.com</a>

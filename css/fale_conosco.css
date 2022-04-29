@@ -1,8 +1,9 @@
 label > #labe {
-   
+   display: flex;
     font-size: 1.1em;
     text-indent: 15px;
 }
+
 .comentario{
     border: 2px solid var(--cor5);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
@@ -27,4 +28,13 @@ textarea {
     text-align: left;
     padding: 2px;
     border: 1px solid #0D0D0D;
+}
+
+#email_nome, #email_dominio{
+    width: 85px; 
+}
+#contato2, #contato4{
+    width: 30px;
+    color: black;
+    font-family: var(--font-destaque);
 }
