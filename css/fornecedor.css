@@ -191,6 +191,28 @@ button:hover{
     font-family: var(--font-destaque01);
 }
 
+/* Implementação Cadastro JS */
+.textfield{
+    background-color: white;
+    border: 2px solid var(--cor5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    border-radius: 5px 0px 5px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    position: relative;
+    font-family: var(--font-destaque);
+  
+}
+
+th{
+    font-weight: normal;
+}
+
 /* media query */
 @media (max-width: 820px) {
     .container-fornecedores {
