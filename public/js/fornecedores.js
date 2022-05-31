@@ -2,7 +2,7 @@ function adicionar(){
     var nome= document.getElementById('nome').value;
     var sobrenome= document.getElementById('sobrenome').value;
     var email= document.getElementById('email').value;
-    var email= document.getElementById('email2').value;
+    var email= document.getElementById('gmail.com').value;
 
     linha=document.createElement("tr");
     celula1 = document.createElement("td");
@@ -12,7 +12,7 @@ function adicionar(){
     celula3 = document.createElement("td"); 
     celula3.textContent=(email);
     celula4 = document.createElement("td"); 
-    celula4.textContent=(email2);
+    celula4.textContent=(gmail.com);
     
     
 
