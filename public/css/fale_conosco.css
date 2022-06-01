@@ -29,12 +29,18 @@ textarea {
     padding: 2px;
     border: 1px solid #0D0D0D;
 }
-
-#email_nome, #email_dominio{
-    width: 85px; 
+#email_nome{
+    width: 225px;
 }
 #contato2, #contato4{
     width: 30px;
     color: black;
     font-family: var(--font-destaque);
+}
+
+.cadastro-fornecedores {
+    max-width: 100%;
+    min-width: 350px;
+    height: 100%;
+    grid-area: "cadastro-fornecedores";
 }

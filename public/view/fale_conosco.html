@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/fornecedor.css">
     <link rel="stylesheet" href="../css/fale_conosco.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/fale_conosco.js"></script>
    
     <title>Fornecedores</title>
 </head>
@@ -57,8 +58,6 @@
                 <div> 
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email_nome">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="email" name="email" id="email_dominio">
                     </div>
                 </div>
 
@@ -75,17 +74,14 @@
                     <div>
                         <label for="contato">Celular: </label>
                         <input type="text" name="ddd" id="ddd" placeholder="DDD">
+                        <span class="input-group-text" id="inputGroupPrepend8">-</span>
                         <input type="text" name="contato" id="contato">
-                        <span class="input-group-text" id="inputGroupPrepend2">-</span>
-                        <input type="text" name="contato" id="contato2">
-                
-        
+
                     <div>
                         <label for="contato">Telefone: </label>
                         <input type="text" name="ddd" id="ddd2" placeholder="DDD">
+                        <span class="input-group-text" id="inputGroupPrepend7">-</span>
                         <input type="text" name="contato" id="contato3">
-                        <span class="input-group-text" id="inputGroupPrepend3">-</span>
-                        <input type="text" name="contato" id="contato4">  
                         </div>
                     </div>
                 </div>
@@ -99,10 +95,41 @@
                 </div>
 
                 <div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit"  value="adicionar" onClick="adicionar()">Enviar </button>
                     <button type="submit">Limpar</button>
                 </div>
             </article>
+
+            <div class="textfield">
+                <p>Fornecedores Cadastrados</p>
+                <table class="textfield" id="fornecedores" >
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="textfield">
+                <p>Contato Cadastrados</p>
+                <table class="textfield" id="ctt" >
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Celular</th>
+                        <th>Telefone</th>
+                    </tr>
+                </table>
+            </div> 
+
+            <div class="textfield">
+                <p>Mensagem</p>
+                <table class="textfield" id="msgText" >
+                    <tr>
+                        <th>Mensagem</th>
+                    </tr>
+                </table>
+            </div> 
 
             <div class="footer">
                 <p class="footer1">
