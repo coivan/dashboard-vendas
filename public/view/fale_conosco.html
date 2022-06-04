@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,18 @@
     <link rel="stylesheet" href="../css/fornecedor.css">
     <link rel="stylesheet" href="../css/fale_conosco.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../js/fale_conosco.js"></script>
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="../js/fire.js"></script>
     <title>Fornecedores</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-           <a href="../index.html"><img src="../icon/logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../icon/logo.png" alt="Logo"></a>
         </div>
         <div>
-          <p class="title"><b>Fale Conosco</b></p>
+            <p class="title"><b>Fale Conosco</b></p>
         </div>
         <ul class="menu">
             <li>
@@ -34,102 +36,67 @@
     <main>
         <section class="container-fornecedores">
             <div class="sidenav">
-              <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../view/dashboard.html">Dashboard</a></li>
-                  <li><a href="../view/produto.html">Produtos</a></li>
-                  <li><a href="../view/fornecedor.html">Fornecedores</a></li>
-                  <li><a href="../view/fale_conosco.html" class="menu-ativo">Fale Conosco</a></li>
-                  <li><a href="../view/quemsomos.html">Quem Somos</a></li>
-              </ul>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../view/dashboard.html">Dashboard</a></li>
+                    <li><a href="../view/produto.html">Produtos</a></li>
+                    <li><a href="../view/fornecedor.html">Fornecedores</a></li>
+                    <li><a href="../view/fale_conosco.html" class="menu-ativo">Fale Conosco</a></li>
+                    <li><a href="../view/quemsomos.html">Quem Somos</a></li>
+                    <li><a href="../view/admin.html">Administração</a></li>
+                </ul>
             </div>
 
             <article>
                 <div class="textfield">
-                
-                <div class="form">
-                    <p>Fornecedores</p>
-                    <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome">
-                    
-                    <label for="sobrenome">Sobrenome: </label>
-                    <input type="text" name="sobrenome" id="sobrenome">
-                    
-                <div> 
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email_nome">
-                    </div>
-                </div>
 
-                <div class="contato">
-                    <p>Contato</p>
-                    
+                    <div class="form">
+                        <p>Fornecedores</p>
+                        <div>
+                            <label for="nome">Nome: </label>
+                            <input type="text" name="nome" id="nome-completo">
+                        </div>
+                        <div>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email-completo">
+                        </div>
+                    </div>
+
+                    <div class="contato">
+                        <p>Contato</p>
+                        
                         <label for="contato">Tipo: </label>
                         <select id="estilo">
                             <option value="">Selecione</option>
                             <option value="cm">Comercial</option>
                             <option value="ps">Pessoal</option>
-                        </select> 
-            
-                    <div>
-                        <label for="contato">Celular: </label>
-                        <input type="text" name="ddd" id="ddd" placeholder="DDD">
-                        <span class="input-group-text" id="inputGroupPrepend8">-</span>
-                        <input type="text" name="contato" id="contato">
+                        </select>
 
-                    <div>
-                        <label for="contato">Telefone: </label>
-                        <input type="text" name="ddd" id="ddd2" placeholder="DDD">
-                        <span class="input-group-text" id="inputGroupPrepend7">-</span>
-                        <input type="text" name="contato" id="contato3">
+                        <div>
+                            <label for="contato">Celular: </label>
+                            <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000"
+                                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                            <div>
+                                <label for="contato">Telefone: </label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000"
+                                    pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="form">
-                    <div class="comentario">
-                        <p>Comentários</p>
-                        <label id="labe" for="mensagem">Mensagem</label>
-                        <textarea name="textareamsg" id="textareamsg"></textarea>
+                    <div class="form">
+                        <div class="comentario">
+                            <p>Comentários</p>
+                            <label id="labe" for="mensagem">Mensagem</label>
+                            <textarea name="textareamsg" id="textareamsg"></textarea>
+                        </div>
                     </div>
-                </div>
 
-                <div>
-                    <button type="submit"  value="adicionar" onClick="adicionar()">Enviar </button>
-                    <button type="submit">Limpar</button>
-                </div>
+                    <div>
+                        <button type="submit" id="btn_enviar" class="limpar_form">Enviar</button>
+                        <button type="submit" id="btn_limpar" class="limpar_form">Limpar</button>
+                    </div>
             </article>
-
-            <div class="textfield">
-                <p>Fornecedores Cadastrados</p>
-                <table class="textfield" id="fornecedores" >
-                    <tr>
-                        <th>Nome</th>
-                        <th>Sobrenome</th>
-                        <th>Email</th>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="textfield">
-                <p>Contato Cadastrados</p>
-                <table class="textfield" id="ctt" >
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Celular</th>
-                        <th>Telefone</th>
-                    </tr>
-                </table>
-            </div> 
-
-            <div class="textfield">
-                <p>Mensagem</p>
-                <table class="textfield" id="msgText" >
-                    <tr>
-                        <th>Mensagem</th>
-                    </tr>
-                </table>
-            </div> 
 
             <div class="footer">
                 <p class="footer1">
@@ -140,7 +107,5 @@
             </div>
 
         </section>
-    </main>
-        
     </main>
 </body>
