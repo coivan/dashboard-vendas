@@ -82,10 +82,13 @@ span{
     margin: 5px;
 }
 
-#nome, #sobrenome, #email, #email2, #bairro, #profissao, #cidade, #estado{
+#nome, #sobrenome, #bairro, #profissao, #cidade, #estado{
     width: 85px; 
 }
 
+#email{
+    width: 230px;
+}
 #empresa, #cargo{
     width: 150px;
     font-family: var(--font-destaque);
@@ -111,7 +114,7 @@ select{
 }
 
 #dd2, #contato, #contato3, #contato5, #contato6{
-    width: 30px;
+    width: 60px;
     color: black;
     font-family: var(--font-destaque);
 }
